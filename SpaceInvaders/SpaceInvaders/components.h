@@ -1,0 +1,121 @@
+#ifndef COMPONENTS_H
+#define COMPONENTS_H
+
+#include "settings.h"
+
+#include <QMainWindow>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsSimpleTextItem>
+#include <QGraphicsItem>
+#include <QKeyEvent>
+
+enum class EColor
+{
+    Red, Pink, Blue
+};
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class components;
+}
+QT_END_NAMESPACE
+
+class CCannon : public QObject, public QGraphicsPixmapItem
+{
+    Q_OBJECT
+
+public:
+    CCannon(EColor eColor,QGraphicsItem* pParent = nullptr);
+
+    void shoot();
+
+    EColor GetColor() const;
+    void setColor(EColor eColor);
+
+signals:
+    void sigIncreaseScore();
+    void sigDecreaseScore();
+
+private:
+    EColor m_eColor;
+};
+
+//////////////////////////////////////////////////////
+
+class CAlien : public QObject, public QGraphicsPixmapItem
+{
+    Q_OBJECT
+public:
+    CAlien(EColor eColor,QGraphicsItem* pParent = nullptr);
+
+    EColor GetColor() const;
+    void SetColor(EColor ecolor);
+
+signals:
+    void sigDecreaseHealth();
+    void sigGameOver();
+
+public slots:
+    void onMove();
+
+private:
+    EColor m_eColor;
+};
+
+//////////////////////////////////////////////////////
+
+class CBullet : public QObject, public QGraphicsPixmapItem
+{
+    Q_OBJECT
+
+public:
+    CBullet(EColor ecolor,QGraphicsItem* pParent = nullptr);
+
+    EColor GetColor() const;
+    void setColor(EColor ecolor);
+
+signals:
+    void sigIncreaseScore();
+    void sigDecreaseScore();
+
+public slots:
+    void onMove();
+
+private:
+    EColor m_eColor;
+};
+//////////////////////////////////////////////////////
+
+class CPoints : public QGraphicsTextItem
+{
+public:
+    CPoints(QGraphicsItem *pParent = nullptr);
+
+    void IncreaseScore();
+    void DecreaseScore();
+    void DecreaseHealth();
+
+    int GetHealth() const;
+    int GetScore() const;
+
+    void Reset();
+
+private:
+    int m_nHealth = gMaxHealth;
+    int m_nScore = 0;
+
+};
+
+
+class components : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    components(QWidget *parent = nullptr);
+    ~components();
+
+private:
+    Ui::components *ui;
+};
+#endif // COMPONENTS_H
