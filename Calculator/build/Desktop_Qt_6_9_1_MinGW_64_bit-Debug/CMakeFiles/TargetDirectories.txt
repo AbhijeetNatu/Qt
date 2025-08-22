@@ -1,0 +1,9 @@
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Calculator.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Calculator_autogen_timestamp_deps.dir
+D:/Masterclass_in_C++_(Yogeshwar_Shukla)/TEMP/MY QT PRACTICE/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Calculator_autogen.dir
